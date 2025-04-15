@@ -1,0 +1,111 @@
+.bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-position: inherit;
+  z-index: 1;
+  background: white;
+  color: #3f3b3b;
+  position: fixed;
+  background-image: url('../../assets/aircraft.png');
+  opacity: 0.6;
+  filter: blur(2px);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flightCards {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+.flightsContainer {
+  display: flex;
+  gap: 300px;
+  justify-content: space-between;
+  color: #666da1;
+
+  .headlineContainer {
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadein 1s 1s ease-in forwards;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .iconContainer {
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .icon {
+      animation: floating 1.5s 1s infinite ease-in-out;
+    }
+  }
+
+  h1 {
+    font-weight: 200;
+    font-size: 48px;
+    letter-spacing: 2px;
+
+    color: #f4eeff;
+    max-width: 100%;
+  }
+}
+
+.flights {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+  margin: 0 10rem;
+  padding-top: 0;
+}
+
+img {
+  max-width: 800px;
+  max-height: 350px;
+  opacity: 0.8;
+  object-fit: cover;
+}
+
+.imgplaceholder {
+  max-width: 800px;
+  max-height: 350px;
+  min-width: 540px;
+  object-fit: cover;
+}
+
+@keyframes fadein {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 120px;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

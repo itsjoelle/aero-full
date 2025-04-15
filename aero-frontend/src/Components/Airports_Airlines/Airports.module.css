@@ -1,0 +1,182 @@
+.bgAirports,
+.bgAirlines {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-position: inherit;
+  z-index: 1;
+  color: #3f3b3b;
+
+  opacity: 0.6;
+  background-size: cover;
+}
+
+.bgAirports {
+  background-image: url('../../assets/airports.jpg');
+}
+.bgAirlines {
+  background-image: url('../../assets/airlines.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.airportslines {
+  font-weight: 300;
+  position: relative;
+  margin: 0 10rem;
+  z-index: 1;
+  padding-top: 200px;
+}
+
+.airportContainer {
+  display: flex;
+  gap: 75px;
+  flex-wrap: wrap;
+}
+.bottom,
+.coordinates {
+  margin: 20px 0;
+}
+
+.coordinates {
+  font-size: 18px;
+}
+
+.lat {
+  display: flex;
+  gap: 20px;
+}
+
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-weight: 200;
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #f4eeff;
+    white-space: nowrap;
+  }
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  width: 450px;
+
+  @media (max-width: 1400px) {
+    display: none;
+  }
+}
+
+.image {
+  min-height: 600px;
+
+  width: auto;
+  opacity: 0.65;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.imgplaceholder {
+  min-height: 500px;
+  width: 450px;
+  object-fit: cover;
+}
+
+.image:nth-child(even) {
+  position: relative;
+  left: 0px;
+}
+
+.image:nth-child(odd) {
+  position: relative;
+  right: 50px;
+}
+
+/* airport and airline: */
+.airport_airline {
+  font-size: 21px;
+  font-weight: 200;
+  border-bottom: 1px solid #628ea96e;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  background: #f4f4f4;
+  color: #3f3b3b;
+  min-width: 400px;
+  display: flex;
+  padding: 25px 20px;
+  border-radius: 3px;
+
+  @media (max-width: 1600px) {
+    font-size: 19px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 16px;
+    width: 250px;
+  }
+
+  @media (max-width: 700px) {
+    width: 350px;
+  }
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media (max-width: 1600px) {
+    font-size: 21px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 19px;
+  }
+}
+
+a {
+  color: #628ea9;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.notfound {
+  width: 250px;
+  margin-top: 40px;
+  font-size: 21px;
+  letter-spacing: 1px;
+  font-weight: 200;
+
+  @media (max-width: 1600px) {
+    width: 300px;
+  }
+
+  @media (max-width: 900px) {
+    width: 250px;
+  }
+
+  @media (max-width: 700px) {
+    width: 350px;
+  }
+}
+
+.horizontalDivider {
+  width: 100%;
+  height: 1px;
+  background: #abc8db;
+
+  margin: 10px 0;
+}

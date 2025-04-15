@@ -1,0 +1,25 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: my-application
+  redis:
+    host: ${REDIS_HOST}
+    port: 6379
+    password: ${REDIS_PASSWORD}
+    ssl: true
+  cloud:
+    gateway:
+      routes:
+        - id: realtime-flights
+          uri: http://localhost:9001
+          predicates:
+            - Path=/api/realtimeflights
+          filters:
+            - RewritePath=/api/realtimeflights, /realtimeflights
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.data.redis: DEBUG

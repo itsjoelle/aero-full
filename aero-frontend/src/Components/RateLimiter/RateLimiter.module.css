@@ -1,0 +1,14 @@
+.rateLimiter {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding-top: 200px;
+  text-align: center;
+  gap: 20px;
+
+  h2 {
+    max-width: unset;
+  }
+}

@@ -1,0 +1,197 @@
+.bg {
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../../assets/airport6.webp');
+  background-size: contain;
+  background-position: inherit;
+
+  z-index: 1;
+  opacity: 0.2;
+  filter: blur(0px);
+  background-image: url('../../assets/scheduled.jpg');
+  background-repeat: round;
+}
+
+.synopsis {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.planeview {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  z-index: 1;
+  opacity: 0.1;
+  min-height: 1000px;
+}
+
+.outerContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 10rem;
+  z-index: 1;
+  padding-top: 200px;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #55d655;
+
+  h1 {
+    font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #f4eeff;
+
+    @media (max-width: 1300px) {
+      font-size: 42px;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 36px;
+    }
+  }
+}
+
+.flightInfoContainer {
+  display: flex;
+  gap: 350px;
+  color: #f4eeff;
+
+  @media (max-width: 1300px) {
+    gap: 150px;
+  }
+
+  @media (max-width: 900px) {
+    gap: 80px;
+  }
+}
+
+.flightInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cityname {
+  font-size: 46px;
+  font-weight: 300;
+
+  @media (max-width: 1300px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 30px;
+  }
+}
+
+.terminalgate {
+  font-size: 22px;
+  font-weight: 300;
+
+  @media (max-width: 1300px) {
+    font-size: 16px;
+  }
+}
+
+.terminalGateInfo {
+  font-weight: 500;
+}
+
+.belowContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  height: 400px;
+  color: #f4eeff;
+
+  @media (max-width: 1300px) {
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+  }
+}
+
+.belowInfo {
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+
+  @media (max-width: 1300px) {
+    gap: 50px;
+  }
+}
+
+.coordinates {
+  font-size: 19px;
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  column-gap: 40px;
+  row-gap: 10px;
+
+  @media (max-width: 1300px) {
+    font-size: 16px;
+  }
+}
+
+.airline {
+  font-size: 19px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @media (max-width: 1300px) {
+    font-size: 16px;
+  }
+}
+
+.horizontalDivider {
+  width: 100%;
+  height: 1px;
+  background: #628ea9;
+}
+
+.divider {
+  display: flex;
+  height: 20px;
+  width: 1px;
+  display: inline-block;
+  background: #628ea9;
+}
+
+.additional {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.updated {
+  font-weight: 400;
+  font-size: 19px;
+
+  @media (max-width: 1300px) {
+    font-size: 16px;
+  }
+}
+
+.image {
+  width: 550px;
+  opacity: 1;
+}

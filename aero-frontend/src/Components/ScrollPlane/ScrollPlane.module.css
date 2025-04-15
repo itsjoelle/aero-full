@@ -1,0 +1,7 @@
+.scrollplane {
+  position: absolute;
+  color: #f4eeff;
+  font-size: 50px;
+  z-index: 3;
+  transition: transform 0.6s ease-out;
+}

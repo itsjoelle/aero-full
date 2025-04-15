@@ -1,0 +1,8 @@
+.containerDefault {
+  color: #628ea9;
+  position: absolute;
+  background: #424874;
+  color: #f4eeff;
+  width: 100vw;
+  min-height: 100vh;
+}

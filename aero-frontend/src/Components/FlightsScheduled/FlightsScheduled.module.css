@@ -1,0 +1,134 @@
+.bg {
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../../assets/airport6.webp');
+  background-size: contain;
+  background-position: inherit;
+
+  z-index: 1;
+  opacity: 0.2;
+  filter: blur(0px);
+  background-image: url('../../assets/scheduled.jpg');
+  background-repeat: round;
+}
+
+.scheduled {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding-top: 200px;
+  margin: 0 10rem;
+
+  h1 {
+    font-weight: 200;
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #f4eeff;
+    white-space: nowrap;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 80px 80px;
+  }
+}
+.scheduled table {
+  width: 100%;
+  padding: 0 20px;
+  font-family: 'Ubuntu Condensed';
+  background-color: rgb(46 46 46 / 43%);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.scheduled table div {
+  border: solid 6px rgb(46 46 46 / 43%);
+  background-color: rgb(0, 0, 0);
+  min-width: 20px;
+  height: 50px;
+  float: left;
+}
+
+.header {
+  font-size: 28px;
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.header th {
+  letter-spacing: 5px;
+}
+
+tr {
+  height: 70px;
+
+  @media (max-width: 1200px) {
+    height: 50px;
+  }
+}
+
+#time {
+  width: 150px;
+
+  @media (max-width: 1200px) {
+    hwidth: 100px;
+  }
+}
+
+#from {
+  width: 150px;
+
+  @media (max-width: 1200px) {
+    hwidth: 100px;
+  }
+}
+
+#destination {
+  width: 150px;
+
+  @media (max-width: 1200px) {
+    width: 100px;
+  }
+}
+
+#flight {
+  width: 180px;
+}
+
+#gate {
+  width: 120px;
+}
+#status {
+  width: 234px;
+}
+
+.flip {
+  animation: flipping 0.5s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 200;
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+@keyframes flipping {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}

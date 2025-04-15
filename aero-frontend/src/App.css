@@ -1,0 +1,30 @@
+body,
+html {
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: black;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leaflet-marker-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-control-zoom-in {
+  margin-top: 0 !important;
+}
+
+.leaflet-control-zoom {
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}

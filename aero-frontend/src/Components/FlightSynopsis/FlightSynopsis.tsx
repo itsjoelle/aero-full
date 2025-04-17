@@ -3,36 +3,8 @@ import styles from './FlightSynopsis.module.css';
 import Navbar from '../Navbar/Navbar';
 import Map from '../Map/Map';
 import { scrollTop } from '../../helpers/scrollTop';
+import { SynopsisData } from '../../types';
 
-export interface Coordinate {
-  planeLatitude: number;
-  planeLongitude: number;
-  departureCity: string;
-  destinationCity: string;
-  departureLatitude: number;
-  departureLongitude: number;
-  destinationLatitude: number;
-  destinationLongitude: number;
-  direction: number;
-}
-
-interface SynopsisData {
-  flight: string;
-  status: string;
-  city_depart: string;
-  terminal_depart: string;
-  terminal_gate_depart: string;
-  city_arrival: string;
-  terminal_arrival: string;
-  terminal_gate_arrival: string;
-  latitude: number;
-  longitude: number;
-  horizontal_speed: number;
-  vertical_speed: number;
-  airline_name: string;
-  updated: string;
-  coordinates: Coordinate;
-}
 const FlightSynopsis = () => {
   const [synopsisData, setSynopsisData] = useState<SynopsisData | null>(null);
 

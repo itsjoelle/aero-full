@@ -1,20 +1,12 @@
 import React, { memo } from 'react';
 import styles from './Airports.module.css';
 import { GoArrowUpRight } from 'react-icons/go';
-
-export interface AirportObj {
-  link: string | undefined;
-  airport_name: string;
-  country_name: string | null;
-  id: string;
-  latitude: string;
-  longitude: string;
-  timezone: string;
-}
+import { AirportObj } from '../../types';
 
 interface AirportProps {
   airport: AirportObj;
 }
+
 const Airport = ({ airport: ap }: AirportProps) => {
   return (
     <div className={styles.airport_airline}>

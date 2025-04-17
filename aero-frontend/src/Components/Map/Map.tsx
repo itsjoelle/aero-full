@@ -15,7 +15,7 @@ import styles from './Map.module.css';
 import { divIcon } from 'leaflet';
 import Control from 'react-leaflet-custom-control';
 import { RiFullscreenExitFill } from 'react-icons/ri';
-import { Coordinate } from '../FlightSynopsis/FlightSynopsis';
+import { Coordinate } from '../../types';
 
 interface MapProps {
   mapData: Coordinate;
